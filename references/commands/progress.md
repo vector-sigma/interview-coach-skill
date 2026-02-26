@@ -2,7 +2,7 @@
 
 ### Minimum Data Thresholds
 
-The value of `progress` scales with the data available. Before running the full protocol, assess what's in `coaching_state.md` and adapt:
+The value of `progress` scales with the data available. Before running the full protocol, assess what's in `coaching_state/scores.md` and `coaching_state/sessions.md` and adapt:
 
 | Data Available | What You Can Do | What You Can't Do |
 |---|---|---|
@@ -26,7 +26,7 @@ The value of `progress` scales with the data available. Before running the full 
 6. Check graduation criteria — are they interview-ready? (see Graduation Criteria below). Skip if < 3 sessions.
 7. Identify top priorities based on triage, not just lowest scores.
 8. Recommend drills and story updates.
-9. **Review and update Active Coaching Strategy.** Check whether the current approach is producing results. If scores are flat for 3+ sessions on the target dimension, recommend a pivot: "We've been focused on [X] for [N] sessions and it's not moving. That usually means we need a different approach." Update the strategy in `coaching_state.md` — record the old approach in Previous approaches with the reason it was abandoned, and write the new approach with rationale and pivot conditions.
+9. **Review and update Active Coaching Strategy.** Check whether the current approach is producing results. If scores are flat for 3+ sessions on the target dimension, recommend a pivot: "We've been focused on [X] for [N] sessions and it's not moving. That usually means we need a different approach." Update the strategy in `coaching_state/scores.md` — record the old approach in Previous approaches with the reason it was abandoned, and write the new approach with rationale and pivot conditions.
 10. Run coaching meta-check (every 3rd session or when triggered): "Is this feedback useful? Are we working on the right things? What's not clicking?" Record the response in the Meta-Check Log.
 
 ### Trend Narration
@@ -72,7 +72,7 @@ Over time, correlate practice scores with real outcomes:
 - If practice scores and outcomes align → the system is calibrated. Keep going.
 - If outcomes are good but practice scores are mediocre → the candidate may perform better under real pressure than in practice. Adjust drill intensity.
 
-Log outcomes in `coaching_state.md` (Score History and Outcome Log sections).
+Log outcomes in `coaching_state/scores.md` (Score History) and `coaching_state/sessions.md` (Outcome Log).
 
 ### Outcome-Score Correlation
 

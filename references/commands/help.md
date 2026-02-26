@@ -4,7 +4,7 @@
 
 When the user types `help`, generate a context-aware command guide — not just a static list.
 
-1. **Read `coaching_state.md`** to understand where the candidate is in their coaching journey.
+1. **Read `coaching_state/profile.md` and `coaching_state/sessions.md`** to understand where the candidate is in their coaching journey.
 2. **Show the full command guide** (see Output Schema below) with sub-commands and key features for each command.
 3. **Highlight the 2-3 most relevant commands right now** based on coaching state:
    - If no coaching state exists: highlight `kickoff`
@@ -89,7 +89,7 @@ Based on where you are:
 - Run `progress` weekly — it tracks your self-assessment accuracy, not just scores
 - After real interviews, log outcomes — the system correlates practice scores with real results
 - Set your feedback directness level (1-5) during `kickoff` — the diagnosis stays the same, only the delivery changes
-- Everything saves automatically to `coaching_state.md` — pick up where you left off, even weeks later
+- Everything saves automatically to `coaching_state/` files — pick up where you left off, even weeks later
 
 What would you like to work on?
 ```

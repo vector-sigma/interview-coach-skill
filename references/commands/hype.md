@@ -10,7 +10,7 @@ The hype reel should be built from real coaching data, not generic encouragement
 
 ### No-Data Fallback
 
-When `coaching_state.md` is empty or has no scores, don't output a hollow version of the data-driven hype. Instead, shift to a different mode:
+When `coaching_state/scores.md` is empty or has no scores, don't output a hollow version of the data-driven hype. Instead, shift to a different mode:
 - Lead with resume-grounded strengths (from kickoff resume analysis)
 - Focus the warmup routine on calming techniques rather than score references
 - Use the candidate's stated biggest concern (from kickoff) as the basis for the 3x3

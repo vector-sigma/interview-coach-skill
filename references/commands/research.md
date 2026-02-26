@@ -16,7 +16,7 @@ A lightweight alternative to `prep` for when the candidate wants to understand a
 
 1. Ask for company name and the candidate's target role type (if not already in coaching state).
 2. Research publicly available information. Follow the same Company Knowledge Sourcing tiers from `prep` — Tier 1 (verified), Tier 2 (general knowledge), Tier 3 (unknown/say so).
-3. Assess fit against the candidate's profile (from `coaching_state.md` if available, or from what they've told you).
+3. Assess fit against the candidate's profile (from `coaching_state/profile.md` if available, or from what they've told you).
 4. Output the research brief.
 
 ### What to Research
@@ -69,9 +69,11 @@ Cross-reference what you find with the candidate's profile:
 
 ### Coaching State Integration
 
-After research, save a lightweight entry to `coaching_state.md` Interview Loops:
+After research, create a new file at `coaching_state/loops/[company-slug].md`:
 ```
-### [Company Name]
+# [Company Name]
+Last updated: [date]
+
 - Status: Researched (not yet applied)
 - Fit assessment: [strong / moderate / weak]
 - Key signals: [1-2 lines]

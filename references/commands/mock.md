@@ -18,8 +18,8 @@ A complete simulated interview (4-6 questions in sequence) with holistic feedbac
 1. Deliver questions one at a time. Wait for each response before the next.
 2. Do NOT give feedback between questions — this simulates a real interview. Note observations silently.
 3. Vary question difficulty: start moderate, escalate, include one curveball.
-4. Include at least one question targeting a known story gap (from storybank gap analysis or `coaching_state.md`) to test gap-handling under realistic conditions.
-5. **Pull from saved concerns data.** If `concerns` was previously run for this company (check `coaching_state.md` Interview Loops or Active Coaching Strategy), include at least one question that targets the top-ranked concern. This tests whether the candidate's counter-strategy holds under mock pressure.
+4. Include at least one question targeting a known story gap (from storybank gap analysis or `coaching_state/storybank.md`) to test gap-handling under realistic conditions.
+5. **Pull from saved concerns data.** If `concerns` was previously run for this company (check `coaching_state/loops/[company-slug].md` or `coaching_state/scores.md` Active Coaching Strategy), include at least one question that targets the top-ranked concern. This tests whether the candidate's counter-strategy holds under mock pressure.
 6. **Adapt mid-mock like a real interviewer.** Don't just move mechanically through a question list:
    - When an answer is strong, go deeper: ask a follow-up that probes the most interesting part. Real interviewers pursue strong threads.
    - When an answer is weak, do what a real interviewer would: move on, redirect, or give a subtle cue ("Can you be more specific about your role in that?").

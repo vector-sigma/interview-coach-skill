@@ -27,7 +27,7 @@ When the candidate selects "Add," don't jump straight to STAR format. Most peopl
 
 Don't skip the reflective prompts and go straight to "tell me a story about leadership." That produces rehearsed, thin stories. The prompts produce real ones.
 
-**Important**: When adding a story, write the full STAR text to the Story Details section in `coaching_state.md` — not just the index row in the Storybank table. The table is a quick-reference index. The Story Details section is where the actual story lives, including Situation, Task, Action, Result, Earned Secret, deploy use-case, and version history. Without the full text, the coach can't help improve the story in a future session without asking the candidate to retell it from scratch.
+**Important**: When adding a story, write the full STAR text to the Story Details section in `coaching_state/storybank.md` — not just the index row in the Storybank table. The table is a quick-reference index. The Story Details section is where the actual story lives, including Situation, Task, Action, Result, Earned Secret, deploy use-case, and version history. Without the full text, the coach can't help improve the story in a future session without asking the candidate to retell it from scratch.
 
 ### Improving Stories — Structured Upgrade Protocol
 
@@ -67,7 +67,7 @@ See `references/storybank-guide.md` for the full storybank format, column defini
 
 When the candidate selects "Find gaps," don't just list missing competencies — rank them by how much they matter for this candidate's target roles:
 
-1. Cross-reference the candidate's target roles/companies (from `coaching_state.md`) with the storybank's skill coverage.
+1. Cross-reference the candidate's target roles/companies (from `coaching_state/profile.md`) with the storybank's skill coverage.
 2. For each gap, assess: **Critical** (this competency will definitely be tested and no story exists), **Important** (likely to come up, only weak stories available), **Nice-to-have** (might come up, but won't make or break the interview).
 3. For critical gaps, check: can an existing story be reframed to cover this competency, or does the candidate need to surface a new experience entirely?
 4. Prescribe gap-handling patterns (from the Gap-Handling Module) for any competencies where no real story exists.
@@ -92,7 +92,7 @@ Requires 5+ stories in the storybank. If fewer exist, redirect: "Narrative ident
 
 #### Analysis Protocol
 
-1. Read every story's full STAR text, earned secret, and deploy use-case from `coaching_state.md`.
+1. Read every story's full STAR text, earned secret, and deploy use-case from `coaching_state/storybank.md`.
 2. Cluster stories by **underlying theme** — not surface skill. Surface skills are things like "leadership" or "communication." Themes are specific patterns like "building systems where none existed," "translating between worlds that don't naturally talk to each other," or "making unpopular bets that paid off." If the theme could describe a generic candidate, go deeper.
 3. Identify 2-3 dominant themes. Most candidates have 2. Three is rare and usually means one is weak.
 4. Name the **sharpest edge** — the theme that is most distinctive to this candidate, hardest to replicate, and most likely to make an interviewer remember them.

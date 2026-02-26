@@ -2,10 +2,9 @@
 
 ### Coaching State Integration
 
-Before drafting, check `coaching_state.md` for data that strengthens the thank-you:
-- **Interview Loops**: Pull interviewer names, round context, stories used, and signals observed from the most recent `debrief` entry.
-- **Interviewer Intelligence**: If interviewer profiles were researched during `prep`, reference shared interests or background to personalize the note.
-- **Storybank**: If `debrief` logged which stories were used and how they landed, use positive-signal stories as callback material ("I especially enjoyed discussing [topic from the story that landed well]").
+Before drafting, check the relevant state files for data that strengthens the thank-you:
+- **`coaching_state/loops/[company-slug].md`**: Pull interviewer names, round context, stories used, and signals observed from the most recent `debrief` entry. If interviewer profiles were researched during `prep`, reference shared interests or background to personalize the note.
+- **`coaching_state/storybank.md`**: If `debrief` logged which stories were used and how they landed, use positive-signal stories as callback material ("I especially enjoyed discussing [topic from the story that landed well]").
 
 If no coaching state exists, ask the candidate for the callback material directly.
 

@@ -13,7 +13,7 @@ If a candidate drops a transcript without having run `kickoff` first, don't refu
 
 ### Step Sequence
 
-1. **Check for existing debrief data.** If `coaching_state.md` has a `debrief` entry for this interview (same company/round), pull it in as context — the candidate's emotional read, interviewer signals they noticed, stories they used, and their same-day self-assessment. This is valuable because debrief captures impressions while fresh, before memory reconstruction smooths things over. Note any discrepancies between debrief impressions and what the transcript actually shows — these deltas are coaching gold.
+1. **Check for existing debrief data.** If `coaching_state/loops/[company-slug].md` has a `debrief` entry for this interview (same company/round), pull it in as context — the candidate's emotional read, interviewer signals they noticed, stories they used, and their same-day self-assessment. This is valuable because debrief captures impressions while fresh, before memory reconstruction smooths things over. Note any discrepancies between debrief impressions and what the transcript actually shows — these deltas are coaching gold.
 2. Ask self-assessment questions first: "Before I dig in — which answer do you feel best about, and which one do you think was weakest? And overall, how do you think it went?" (Wait for response before proceeding.) If a debrief already captured this, reference it: "You told me right after the interview that Q3 felt rough. Let's see what the transcript shows."
 3. **Set the self-assessment aside.** Do NOT let the candidate's answer influence your scoring. Analyze the transcript independently — score first, form your own conclusions, then compare to what they said.
 4. Clean transcript minimally.
@@ -52,7 +52,7 @@ After scoring, identify bottleneck dimensions and branch. Most candidates have m
     - Values Alignment
     - Calibration (skip if Substance < 3 — premature optimization)
 14. Synthesize into delta plan with triage-informed priorities.
-15. **Update Active Coaching Strategy in `coaching_state.md`.** Write the chosen coaching path, rationale, and pivot conditions. If an Active Coaching Strategy already exists, check whether this analysis confirms or contradicts it. If the data suggests a different bottleneck than the current strategy targets, **move the old approach to Previous approaches** (with brief reason for the change) before writing the new one: "Your previous coaching focus was Structure, but this transcript shows Structure at 4 while Differentiation is at 2. I'm updating the strategy to focus on Differentiation." Always preserve the history of what was tried and why it was abandoned — this prevents the coach from cycling back to strategies that already failed.
+15. **Update Active Coaching Strategy in `coaching_state/scores.md`.** Write the chosen coaching path, rationale, and pivot conditions. If an Active Coaching Strategy already exists, check whether this analysis confirms or contradicts it. If the data suggests a different bottleneck than the current strategy targets, **move the old approach to Previous approaches** (with brief reason for the change) before writing the new one: "Your previous coaching focus was Structure, but this transcript shows Structure at 4 while Differentiation is at 2. I'm updating the strategy to focus on Differentiation." Always preserve the history of what was tried and why it was abandoned — this prevents the coach from cycling back to strategies that already failed.
 
 ### Per-Answer Format (for each analyzed answer)
 

@@ -60,11 +60,11 @@ If they accept, run a mini pushback drill (2-3 rounds) focused on the top 1-2 co
 - Round 1: Direct question version
 - Round 2: Subtle probe version
 - Round 3: Follow-up challenge after their counter
-Score each round and add to Score History in `coaching_state.md` (Type: practice). Update Session Log with the concern-focused drill.
+Score each round and add to Score History in `coaching_state/scores.md` (Type: practice). Update Session Log in `coaching_state/sessions.md` with the concern-focused drill.
 
 ### Concern Tracking
 
-After generating, save the ranked concerns to `coaching_state.md` (in the Interview Loops section under the relevant company's Concerns surfaced field, or in Active Coaching Strategy if general). This allows:
+After generating, save the ranked concerns to `coaching_state/loops/[company-slug].md` (under the Concerns surfaced field), or to `coaching_state/scores.md` (Active Coaching Strategy) if general. This allows:
 - `prep` to pull from previously generated concerns instead of re-deriving them
 - `hype` to reference the top concern + counter in the 3x3
 - `progress` to track whether concerns are being addressed over time

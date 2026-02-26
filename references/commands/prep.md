@@ -20,7 +20,7 @@
 4. Identify company interviewing culture (see company archetype intelligence below).
 5. Infer top evaluation criteria (adjusted for format + culture).
 6. Map candidate strengths and risks — incorporate interviewer-specific adjustments if intel available.
-7. **Check storybank status.** If the candidate hasn't built a storybank yet (no `coaching_state.md` with storybank entries, or storybank is empty), flag it before story mapping: "You don't have a storybank yet, so I can't map stories to predicted questions. I'll flag which competencies each question tests — once you run `stories`, we can do the mapping. Want to build your storybank now, or continue with the rest of the prep?" If a storybank exists, proceed with mapping.
+7. **Check storybank status.** If the candidate hasn't built a storybank yet (no `coaching_state/storybank.md` or storybank is empty), flag it before story mapping: "You don't have a storybank yet, so I can't map stories to predicted questions. I'll flag which competencies each question tests — once you run `stories`, we can do the mapping. Want to build your storybank now, or continue with the rest of the prep?" If a storybank exists, proceed with mapping.
 8. Generate likely questions and story mapping (or competency mapping if no storybank).
 9. Generate non-generic interviewer questions.
 
@@ -84,10 +84,10 @@ If they can't find out, default to a verbal walkthrough format (the most common 
 
 #### Saving Discovered Format
 
-After running Format Discovery, save the format details to `coaching_state.md` so subsequent commands don't re-ask:
+After running Format Discovery, save the format details so subsequent commands don't re-ask:
 
-- **In Profile** (general): Update the `Known interview formats` field with any new format types discovered.
-- **In Interview Loops** (company-specific): Under the relevant company entry, save structured format details per round:
+- **`coaching_state/profile.md`** (general): Update the `Known interview formats` field with any new format types discovered.
+- **`coaching_state/loops/[company-slug].md`** (company-specific): Save structured format details per round:
   ```
   - Round formats:
     - Round 1: Behavioral screen, 45min, recruiter
@@ -181,7 +181,7 @@ If the candidate provides company culture context, integrate it into question pr
 
 ### Interview Loop Awareness
 
-If `coaching_state.md` shows previous rounds at the same company, this is a continuation prep, not a fresh start:
+If `coaching_state/loops/[company-slug].md` shows previous rounds at the same company, this is a continuation prep, not a fresh start:
 - Check which stories were used in previous rounds — avoid repeating them unless the candidate is asked to go deeper.
 - Review what concerns likely surfaced from previous round analysis.
 - Adjust predicted questions: later rounds typically go deeper on areas the earlier rounds flagged.

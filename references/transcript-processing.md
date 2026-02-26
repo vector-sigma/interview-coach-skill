@@ -304,12 +304,11 @@ NEXT ACTIONS (co-created with candidate):
 
 ## Step 5: Update Coaching State
 
-After analysis, update `coaching_state.md` per the State Update Triggers in SKILL.md:
+After analysis, update state files per the State Update Triggers in SKILL.md:
 
-1. **Score History**: Add a row with the interview scores, Type: interview, and Hire Signal from the overall assessment.
-2. **Active Coaching Strategy**: Write or update the strategy based on the triage decision (see Step 15 in `references/commands/analyze.md`). Preserve Previous approaches when changing strategy.
-3. **Session Log**: Add an entry for this analysis session.
-4. **Storybank**: Apply any rework/retire/add recommendations from the delta sheet.
+1. **`coaching_state/scores.md`**: Add a Score History row with the interview scores, Type: interview, and Hire Signal. Write or update Active Coaching Strategy based on the triage decision (see Step 15 in `references/commands/analyze.md`). Preserve Previous approaches when changing strategy.
+2. **`coaching_state/sessions.md`**: Add a Session Log entry for this analysis session.
+3. **`coaching_state/storybank.md`**: Apply any rework/retire/add recommendations from the delta sheet.
 
 The following pattern metrics are captured inline in the analysis output (Anti-Pattern Scan, Per-Answer Scorecards, and Delta Sheet) rather than in a separate tracker. Key metrics to reference in future sessions:
 - Average scores per dimension

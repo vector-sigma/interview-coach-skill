@@ -18,7 +18,7 @@ Say `kickoff`, share your resume, and you're being coached in under 2 minutes.
 
 **Interview lifecycle** — Company research, role-specific prep briefs with interviewer intelligence, same-day post-interview debrief, outcome tracking that correlates practice scores with real results, and post-offer negotiation coaching with exact scripts.
 
-**Session continuity** — A persistent `coaching_state.md` file tracks your storybank, scores, patterns, drill progression, and interview loops across sessions. Pick up where you left off, weeks later. Saves are automatic.
+**Session continuity** — A persistent `coaching_state/` directory with separate files tracks your storybank, scores, patterns, drill progression, and interview loops across sessions. Only the files needed for each command are loaded, keeping context lean. Pick up where you left off, weeks later. Saves are automatic.
 
 **Differentiation** — Earned secrets and spiky POVs are a first-class dimension, not an afterthought. The system pushes you past "competent" toward "memorable."
 
@@ -49,7 +49,7 @@ mv SKILL.md CLAUDE.md
 
 3. Open the folder in Claude Code on Desktop and say `kickoff`.
 
-The coach will ask for your resume, target role, and timeline — then build your profile, assess your starting point, and give you a prioritized action plan. Everything saves automatically to `coaching_state.md` so you pick up where you left off next session.
+The coach will ask for your resume, target role, and timeline — then build your profile, assess your starting point, and give you a prioritized action plan. Everything saves automatically to `coaching_state/` files so you pick up where you left off next session.
 
 **Also works with**: Claude Code (terminal), Cursor, or any environment with file system access.
 
@@ -258,7 +258,13 @@ interview-coach-skill/
 ├── SKILL.md                            # Core skill — rename to CLAUDE.md to activate
 ├── README.md                           # This file
 ├── LICENSE                             # MIT License
-├── coaching_state.md                   # Created on first kickoff (persistent memory, auto-saved)
+├── coaching_state/                     # Created on first kickoff (persistent memory, auto-saved)
+│   ├── profile.md                     # Profile + resume analysis
+│   ├── storybank.md                   # Story index + full STAR details
+│   ├── scores.md                      # Score history + strategy + drill progression
+│   ├── sessions.md                    # Session log + outcome log + coaching notes
+│   └── loops/                         # Per-company interview loop data
+│       └── [company-slug].md
 └── references/
     ├── commands/                       # Per-command workflows (loaded on demand)
     │   ├── kickoff.md
@@ -313,7 +319,7 @@ No. Core workflows are role-agnostic; role drills include PM, Engineering, Desig
 The skill is intentionally high-candor and evidence-based. It uses strengths-first delivery and self-reflection before critique. It also periodically checks whether the coaching is landing and adapts if not. You can set your feedback directness level (1-5) during kickoff.
 
 **How does it work across multiple sessions?**
-The skill writes a `coaching_state.md` file that tracks your storybank, scores, patterns, drill progression, interview outcomes, interview loops, and more. At the start of each session, it reads this file and picks up where you left off. Saves happen automatically after every major workflow — not just at session end.
+The skill writes to a `coaching_state/` directory with separate files for your profile, storybank, scores, sessions, and per-company interview loops. At the start of each session, it reads only the files it needs and picks up where you left off. This keeps context lean even after weeks of coaching. Saves happen automatically after every major workflow — not just at session end.
 
 ---
 

@@ -45,16 +45,12 @@ Feed these findings into the Kickoff Summary output (Profile Snapshot section) a
 
 ### Step 3: Initialize Coaching State
 
-Write the initial `coaching_state.md` file (see SKILL.md Session State System for format) with:
-- Profile section populated from Steps 1-2
-- Resume Analysis section populated from Step 2.5 output (positioning strengths, likely concerns, career narrative gaps, story seeds). This is critical — every downstream command (`concerns`, `prep`, `stories`, `hype`) benefits from having the resume analysis persisted. Don't lose this work.
-- Empty storybank (or populated if initial stories were provided — if initial stories are provided, write full STAR text to the Story Details section)
-- Empty score history, outcome log, drill progression at Stage 1
-- Empty Active Coaching Strategy (will be populated after first `analyze` or `practice`)
-- Empty Meta-Check Log table
-- Empty Interview Loops section (will be populated by `research` or `prep`)
-- Session log with kickoff entry
-- Coaching Notes with any relevant observations from the kickoff conversation (e.g., interview anxiety, communication style preferences, emotional state about the job search)
+Create the `coaching_state/` directory and write the initial state files (see SKILL.md Session State System for formats):
+- **`coaching_state/profile.md`**: Profile section populated from Steps 1-2. Resume Analysis section populated from Step 2.5 output (positioning strengths, likely concerns, career narrative gaps, story seeds). This is critical — every downstream command (`concerns`, `prep`, `stories`, `hype`) benefits from having the resume analysis persisted. Don't lose this work.
+- **`coaching_state/storybank.md`**: Empty storybank (or populated if initial stories were provided — if initial stories are provided, write full STAR text to the Story Details section).
+- **`coaching_state/scores.md`**: Empty score history, drill progression at Stage 1, empty Active Coaching Strategy (will be populated after first `analyze` or `practice`).
+- **`coaching_state/sessions.md`**: Empty outcome log, empty Meta-Check Log table, session log with kickoff entry, Coaching Notes with any relevant observations from the kickoff conversation (e.g., interview anxiety, communication style preferences, emotional state about the job search).
+- **`coaching_state/loops/`**: Create the directory (will be populated by `research` or `prep`).
 
 ### Time-Aware Coaching
 

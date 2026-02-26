@@ -83,7 +83,7 @@ Based on the emotional check in step 1, adapt:
 
 ### Coaching State Integration
 
-Update `coaching_state.md` per the State Update Triggers in SKILL.md:
-- Storybank updates: Last Used dates, performance notes
-- Interview Loop updates: round completed, stories used, signals noted
-- Outcome Log: add entry with Result: pending
+Update state files per the State Update Triggers in SKILL.md:
+- `coaching_state/storybank.md`: Last Used dates, performance notes
+- `coaching_state/loops/[company-slug].md`: round completed, stories used, signals noted
+- `coaching_state/sessions.md`: Outcome Log entry with Result: pending

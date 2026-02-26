@@ -13,7 +13,7 @@ Suggest `reflect` when:
 ### Sequence
 
 1. **Acknowledge the milestone.** Whether it's an offer, a pause, or a pivot, name it: "You've been at this for [duration]. Let's look at the full arc." Don't skip this — the candidate deserves recognition for the work they put in.
-2. **Pull the full data.** Review all of `coaching_state.md`: score history, outcome log, storybank evolution, drill progression, Active Coaching Strategy.
+2. **Pull the full data.** Review all state files: `coaching_state/scores.md` (score history, drill progression, Active Coaching Strategy), `coaching_state/sessions.md` (outcome log), `coaching_state/storybank.md` (storybank evolution), and all `coaching_state/loops/*.md` files.
 3. **Narrate the journey.** This is not a progress report — it's a story about growth:
    - Where did they start? (kickoff baseline)
    - What were the biggest breakthroughs? (inflection points from score history)
@@ -90,12 +90,12 @@ This is the workflow where the coach's anti-sycophancy commitment matters most. 
 [Final state of storybank for future reference]
 
 ## Coaching State Archived
-[Note that coaching_state.md is being preserved, not deleted — it's available if they resume]
+[Note that coaching_state/ files are being preserved, not deleted — they're available if they resume]
 
 **Next commands**: `kickoff` (if starting a new search), `help`
 ```
 
 ### Coaching State Handling
 
-- Do NOT delete `coaching_state.md`. Mark it as archived with a date: add `Status: Archived [date] — [reason: accepted offer / paused search / etc.]` at the top.
+- Do NOT delete the `coaching_state/` directory. Mark it as archived: add `Status: Archived [date] — [reason: accepted offer / paused search / etc.]` at the top of `coaching_state/profile.md`.
 - If the candidate later runs `kickoff` again, the coach can reference the archived state: "I see you went through coaching before. Want to build on that foundation or start fresh?"
